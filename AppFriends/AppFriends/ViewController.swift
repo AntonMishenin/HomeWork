@@ -72,9 +72,9 @@ class ViewController: UIViewController {
     }
     
     func setupAutoLayouts() {
-        loginContentView.leftAnchor.constraint(equalTo:view.leftAnchor).isActive = true
-        loginContentView.rightAnchor.constraint(equalTo:view.rightAnchor).isActive = true
-        loginContentView.heightAnchor.constraint(equalToConstant: view.frame.height/3).isActive = true
+        loginContentView.leftAnchor.constraint(equalTo:view.leftAnchor, constant: 10).isActive = true
+        loginContentView.rightAnchor.constraint(equalTo:view.rightAnchor, constant: -10).isActive = true
+        loginContentView.heightAnchor.constraint(equalToConstant: 185).isActive = true
         loginContentView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
         
         unameTxtField.topAnchor.constraint(equalTo:loginContentView.topAnchor, constant:25).isActive = true
